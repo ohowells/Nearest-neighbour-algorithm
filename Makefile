@@ -1,6 +1,6 @@
 cc=g++
 ccFlags=-std=c++11
-files=main.cpp
+files=src/main.cpp
 
 default:
 	$(cc) $(ccFlags) $(files)
