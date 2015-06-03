@@ -2,6 +2,7 @@
 #define _NEAREST_NEIGHBOUR_
 
 #include <math.h>
+#include <float.h>
 
 namespace NN
 {
