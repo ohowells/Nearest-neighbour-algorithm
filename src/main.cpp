@@ -1,7 +1,7 @@
 #include <exception>
 #include <iostream>
-#include "FileManager.h"
-#include "NearestNeighbour.h"
+#include "../include/FileManager.h"
+#include "../include/NearestNeighbour.h"
 
 void Wait(void)
 {
