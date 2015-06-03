@@ -1,7 +1,7 @@
-#include <exception>
 #include <iostream>
 #include "../include/FileManager.h"
 #include "../include/NearestNeighbour.h"
+#include "../include/exception.h"
 
 void Wait(void)
 {
@@ -28,11 +28,11 @@ int main(void)
 		std::ifstream infile("data_base.txt");
 
 		if (!infile)
-			throw std::exception("\nCould not open file.\n\n");
+			throw MyException("\nCould not open file.\n\n");
 
 		f_manager.LoadDataSet(infile, test_set, training_set, 66);
 	}
-	catch (const std::exception& err)
+	catch (const MyException& err)
 	{
 		std::cout << err.what();
 		Wait();
