@@ -18,4 +18,8 @@ Steps for the algorithm
 
 Nodes are represented by data from the Iris data set.
 
+To run type: 
+
+:~$ make
+:~$ ./a.out
 
