@@ -1,9 +1,10 @@
-cc=g++
-ccFlags=-std=c++11
-files=src/main.cpp
+CXX=g++
+CXXFlags=-std=c++11 -o
+Files=src/main.cpp
+Objects=nn.o
 
 default:
-	$(cc) $(ccFlags) $(files)
+	$(CXX) $(CXXFlags) $(Objects) $(Files)
 
 clean:
-	rm -f a.out
+	rm -f *.o *.out
